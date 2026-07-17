@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Bakul Sayur</title>
+    
+    <!-- Memuat Favicon dari Google Drive dengan trik lh3 -->
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/10Uh8UNwfqGzuOpP1kWnOOkwCd6mmDOXh">
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/10Uh8UNwfqGzuOpP1kWnOOkwCd6mmDOXh">
+
+    <style>
+        /* 
+         * Reset margin & padding bawaan browser.
+         * overflow: hidden mencegah munculnya scrollbar ganda (satu dari pembungkus, satu dari iframe).
+         */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden; 
+            background-color: #f8fafc; /* Warna background fallback senada dengan UI */
+            font-family: sans-serif;
+        }
+
+        /* 
+         * Memaksa iframe memenuhi 100% ruang yang tersedia tanpa batas/border.
+         */
+        #webapp-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Iframe menunjuk ke URL Google Apps Script Exec Anda -->
+    <iframe 
+        id="webapp-frame" 
+        src="https://script.google.com/macros/s/AKfycbxho2go89HodgXxllBk0VimBlsWtmwsgVWdEqNZrULZIuh9xW7hVndKTQgPemWpoKZm/exec" 
+        title="CRM Bakul Sayur Web App"
+        allowfullscreen="true"
+        allow="camera; microphone; clipboard-read; clipboard-write">
+    </iframe>
+</body>
+</html>
